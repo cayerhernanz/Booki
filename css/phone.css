@@ -20,47 +20,54 @@
 
   /* Header */
 
-  header{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-content: center;
-        margin: 4% 0% 4% 0%;
+    header {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0%;
+    padding: 0% 0% 4% 0%;;
     }
 
-  header img{
-        margin: 0% 0% 2% 5%;
-  }
-
-  nav{
-        margin: 3% 0% 0% 0%;
+    nav {
         width: 100%;
-        border-bottom: 4px solid #f2f2f2;
-  }
+        margin: 0;
+        padding: 8% 0 0 0;
+    }
 
-  nav ul{
-        width: 100%;
-        display: flex;
+    header img {
+        height: 40px;
+        width: 100px;
+        object-fit: cover;
+        margin: 5% 0 0 5%;
+    }
+
+    nav ul {
+        gap: 0;
+        margin: 0;
+        padding: 0;
         justify-content: space-evenly;
-        gap: 15%;
-        margin: 0% 0% 0% 0%;
-        padding: 0% 0% 5% 0%;
-  }
+    }
 
-  nav li{
+    nav li{
+        text-align: center;
         width: 50%;
-        margin: 0% 0% 0% 9%;
-  }
-
-  nav a{
-        border-bottom: 4px solid transparent;
-        padding: 0%  0% 14% 0%;   
-  }
-
-  nav a:hover{
-        border-bottom: 4px solid #0065FC;
+        margin-top: 0%;
+        height: 100%;
+        padding: 0 0 5% 0;;
         border-top: none;
-  }
+        border-bottom: 4px solid #DEEBFF;
+    }
+
+    nav a{
+        padding: 0;
+    }
+
+    /* Header-nav - surlignage bleu */
+
+    nav li:hover{ 
+        border-top: none;
+        border-bottom: 4px solid #0065FC;
+    }
 
   /* Section recherche */
   
