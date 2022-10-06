@@ -119,95 +119,37 @@
   /* Section recherche - filtres */
 
     #filtre-bar{
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        gap: 3%;
+        flex-flow: column nowrap;
+        align-items: flex-start;
     }
 
     #filtre-bar h2{
         margin: 0;
     }
 
-    .filtre{
-        width: auto;
+    #filtre-bar-phone{
         display: flex;
-        flex-direction: row;
-        border: 2px solid #f2f2f2;
-        border-top-right-radius: 15% 50%;
-        border-bottom-right-radius: 15% 50%;
-        border-top-left-radius: 15% 50%;
-        border-bottom-left-radius: 15% 50%;
-        align-items: center;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+
+    #filtre-row-phone{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 5%;
     }
 
     .filtre i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #DEEBFF;
-        color: #0065FC;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: visible;
-        padding: 0;
+        width: 40px;
+        height: 40px;
     }
 
     .filtre-content{
         font-weight: bold;
-        font-size: 14px;
+        font-size: 13px;
         padding: 0 25px 0 5px;
     }
-
-    .filtre:hover{
-        background-color: rgba(0, 101, 252, 0.2);
-        cursor: pointer;
-    }
-
-    /* #filtre-bar{
-        flex-flow: column wrap;
-    }
-
-    #filtre-list{
-        display: contents;
-    }
-
-    .filtre{
-        display: flex;
-        width: 100%;
-        height: 42px;
-        margin: 7px;
-        padding: 10px 15px 10px 10px;
-        border-radius: 50px;
-        background-color: #f2f2f2;
-        position: relative;
-        align-self: center;
-        cursor: pointer;
-    }
-
-    .filtre .fa-solid{
-        color: #0065FC;
-        height: 40px;
-        background-color: #DEEBFF;
-        line-height: 40px;
-        width: 44px;
-        border-radius: 50px;
-        position: absolute;
-        top: -2px;
-        left: -7px;
-        cursor: pointer;
-    }
-
-    .fa-solid .fas{
-        font-weight: 900;
-        padding-left: 13px;
-    }
-
-    .filtre-content{
-        padding-left: 10px;
-        font-size: 14px;
-    } */
 
   /* Section recherche - informations */
 

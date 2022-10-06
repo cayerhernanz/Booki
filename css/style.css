@@ -159,6 +159,10 @@ label{
     gap: 3%;
 }
 
+#filtre-bar-phone, #filtre-row-phone{
+    display: contents;
+}
+
 #filtre-bar h2{
     margin: 0;
 }
