@@ -1,0 +1,229 @@
+@media screen and (max-width:991px){
+
+    /* Propriétés générales */
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 11px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    /* Header */
+
+    header {
+        margin: 0% 3% 2% 3%;
+    }
+
+    nav {
+        margin: 4% 5% auto auto;
+    }
+
+    header img {
+        margin: 3% auto auto 4%;
+        
+    }
+
+    nav ul {
+        justify-content: space-between;
+        gap: 20%;
+        font-size: 14px;
+    }
+
+    nav a {
+        padding-top: 41px;
+    }
+
+    /* Section recherche */
+
+    #recherche{
+        margin: 2% 2% 2% 2%;
+    
+    }
+
+    #recherche p{
+        margin-bottom: 2%;
+    }
+
+    /* Section recherche - barre de recherche */
+
+    form{
+        width: 45%;
+        margin-bottom: 3%;
+    }
+
+    /* Section recherche - filtres */
+
+    #filtre-bar{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 3%;
+    }
+
+    #filtre-list{
+        width: 75%;
+        height: 48px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2%;
+    }
+
+    
+
+    .first-filtre{
+        padding-right: 10px;
+    }
+
+    .filtre-animaux{
+        width: 250px;
+    }
+
+    .filtre-content{
+        font-size: 14px;
+    }
+
+    /* Section Resultats */
+
+    #resultats{
+        gap: 2%;
+        margin: 0% 2% 0% 2%;
+    }
+
+    /* Section Resultats - article hébergements */
+
+    #liste-hebergements{
+        padding: 1% 0% 1% 0%;
+        height: 100%;
+    }
+
+    #liste-hebergements h2{
+        margin: 0% 0% 0% 1%;
+        padding: 3% 0% 3% 0%;
+    }
+
+    #plus{
+       margin: 1% 1% 1% 1%;
+       padding: 0;
+    }
+
+
+    /* Section Resultats - article hébergements - container cartes */
+
+    #hebergement-card-container{
+        gap: 1%;
+        padding: 1%;
+    }
+
+    /* Section Resultats - article hébergements - container cartes - container ligne de 3 cartes */
+
+    .hebergement-card-container-row{
+        gap: 2%;
+        height: 50%;
+    }
+
+    /* Section Resultats - article hébergements - container cartes - cartes hébergement */
+
+    .card-body-hebergement{
+        padding: 0.5%;
+    }
+
+    .card-body-hebergement h3{
+        padding: 0;
+        margin: 0;
+    }
+
+    .card-body-hebergement p{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Section Resultats - article hebergements populaires */
+
+    #hebergements-populaires{
+        padding: 0 1% 0 1%;
+    }
+
+    /* Section Resultats - article hebergements populaires - entête */
+
+    #entête-populaires{
+    
+        margin: 5% 3% 0% 6%;
+        padding: 0%;
+    }
+
+    #entête-populaires i{
+        font-size: 16px;
+    }
+
+    /* Section Resultats - article  hebergements populaires - liste hebergements populaires */
+
+    #liste-hebergements-populaires{
+        margin-top: 3%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: space-between;
+        gap: 4%;
+    }
+
+    /* Section Resultats - article populaires - liste populaires - carte hebergement populaire */
+
+    .carte-hebergement-populaire{  
+        gap: 4%;  
+    }
+
+    .card-image-hebrgement-populaire{
+        height: 95px;
+    }
+
+    /* Section activités */
+
+    #activites{
+        margin: 5% 2% 5% 2%;
+    }
+
+    /* Section activités - carte activité large */
+
+    .card-activite-large h3{
+        margin: 5% 5% 0 5%;
+    }
+
+    .card-activite-large img{
+        height: 260px;
+    }
+
+
+    /* Section activités - container 2 cartes activité - carte activité fort */
+
+    #card-activite-fort{
+        height: 48%;
+    }
+
+    #card-activite-fort img{
+        margin: 0;
+        height: 115px;
+    }
+
+    /* Section activités - container 2 cartes activité - carte activité small */
+
+    .card-activite-small{
+        height: 48%;
+    }
+    .card-activite-small h3{
+        margin: 5%;
+        padding: 1%;
+    }
+
+    .card-activite-small img{
+        height: 110px;
+    }
+}

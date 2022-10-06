@@ -1,0 +1,591 @@
+/* Propriétés générales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 14px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 3% 2% 3%;
+}
+
+nav {
+    width: 30%;
+    margin: 2% 2% auto auto;
+    padding: 0%;
+}
+
+header img {
+    height: 40px;
+    width: 100px;
+    margin: 3% auto auto 2%;
+    object-fit: cover;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: 16px; 
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    margin-top: 0%;
+    padding-top: 30px;
+    padding-left: 5%;
+}
+
+nav a:hover{
+    color: #0065FC;
+}
+
+/* Header-nav - surlignage bleu */
+
+nav a{
+    border-top: 4px solid transparent;
+}
+
+nav a:hover{ 
+    border-top: 4px solid #0065FC;
+}
+
+/* Section recherche */
+
+#recherche{
+    margin: 2% 3% 2% 3%;
+  
+}
+
+#recherche p{
+    margin-bottom: 1%;
+}
+
+/* Section recherche - barre de recherche */
+
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    width: 35%;
+    height: 10%;
+    margin-bottom: 3%;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 13%;
+    border-top-left-radius: 30% 30%;
+    border-bottom-left-radius: 30% 30%;
+}
+
+#ville{
+    width: 51%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+}
+
+#bouton{
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    width: 32%;
+    border: none;
+    border-top-right-radius: 15% 30%;
+    border-bottom-right-radius: 15% 30%;
+}
+
+#btn{
+    display: none;
+}
+
+#barre i{
+    display: flex;   
+}
+
+#ville::placeholder{
+    font-weight: bold;
+    color: black;
+}
+
+/* Section recherche - filtres */
+
+#filtre-bar{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3%;
+}
+
+#filtre-list{
+    height: 48px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2%;
+}
+
+.filtre{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f2f2f2;
+    border-top-right-radius: 15% 50%;
+    border-bottom-right-radius: 15% 50%;
+    border-top-left-radius: 15% 50%;
+    border-bottom-left-radius: 15% 50%;
+    align-items: center;
+}
+
+.first-filtre{
+    padding-right: 16px;
+}
+
+.filtre-animaux{
+    width: 250px;
+}
+
+.filtre i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: visible;
+}
+
+.filtre-content{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filtre:hover{
+    border: 2px solid #0065FC;
+    background-color: rgba(0, 101, 252, 0.2);
+    cursor: pointer;
+}
+
+/* Section recherche - informations */
+
+#informations{
+    margin: 3% auto 3% auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+
+#informations i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    border: 2px solid #f2f2f2;
+    border-radius: 100%;
+    width: 30px;
+    padding: 5px;
+}
+
+/* Section Resultats */
+
+#resultats{
+    display: flex;
+    gap: 3%;
+    margin: 0% 3% 0% 3%;
+}
+
+/* Section Resultats - article hébergements */
+
+#liste-hebergements{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    width: 66%;
+    border-radius: 3%;
+    padding: 1% 0% 1% 0%;
+}
+
+#liste-hebergements h2{
+    margin: 0% 0% 0% 2%;
+    padding: 3% 2% 2% 2%;
+}
+
+#plus{
+    padding: 3% 2% 2% 2%;
+    padding-left: 4%;
+}
+
+#plus:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Section Resultats - article hébergements - container cartes */
+
+#hebergement-card-container{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 3% 0 3%;
+}
+
+/* Section Resultats - article hébergements - container cartes - container ligne de 3 cartes */
+
+.hebergement-card-container-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+}
+
+/* Section Resultats - article hébergements - container cartes - cartes hébergement */
+
+.carte-hebergement{
+    background-color: white;
+    box-shadow: 3px 3px 1px #e3e3e3;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    width: 33%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.carte-hebergement:hover{
+    color: #0065FC;
+}
+
+.carte-hebergement img{
+    width: 100%;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-body-hebergement{
+    padding: 1% 3% 1% 3%;
+}
+
+.card-body-hebergement h3{
+    padding: 1% 1% 1% 1%;
+    margin: 0;
+}
+
+.card-body-hebergement p{
+    padding: 1% 1% 1% 1%;
+    margin: 0;
+}
+
+.etoiles{
+    padding: 1% 1% 1% 1%;
+    margin: 0;
+}
+
+.etoiles i{
+    color: #0065FC;
+}
+
+
+.grey-star i{
+    color: #f2f2f2;  
+}
+
+/* Section Resultats - article hebergements populaires */
+
+#hebergements-populaires{
+    background-color: #f2f2f2;
+    width: 33%;
+    border-radius: 20px;
+    padding: 0 2% 0 2%;
+}
+
+/* Section Resultats - article hebergements populaires - entête */
+
+#entête-populaires{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 3% 0% 6%;
+    padding: 0%;
+}
+
+#entête-populaires i{
+    font-size: 23px;
+}
+
+/* Section Resultats - article  hebergements populaires - liste hebergements populaires */
+
+#liste-hebergements-populaires{
+    margin-top: 3%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+    gap: 5%;
+}
+
+/* Section Resultats - article populaires - liste populaires - carte hebergement populaire */
+
+.carte-hebergement-populaire{
+    background-color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 4%;
+    border-radius: 25px;
+    padding: 1%;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.card-image-hebrgement-populaire{
+    object-fit: cover;
+    width: 90px;
+    border-radius: 20px 0 0 20px;
+}
+
+.card-body-hebrgement-populaire{
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    padding: 5% 5% 2% 2%;
+    
+}
+
+.card-body-hebrgement-populaire h3{
+    margin: 0 0 2% 0;
+}
+
+.card-body-hebrgement-populaire p{
+    margin: 5% 0 0 0;
+  
+}
+
+.etoiles-pop{
+    padding: 1% 1% 1% 1%;
+    margin: 10% 0 0 0;
+}
+
+.etoiles-pop i{
+    color: #0065FC;
+}
+
+.grey-star-pop i{
+    color: #f2f2f2;
+}
+
+.carte-hebergement-populaire:hover{
+    color: #0065FC;
+}
+
+/* Section activités */
+
+#activites{
+    margin: 5% 3% 5% 3%;
+}
+
+#actvite-card-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 3%;
+   
+}
+
+#activites a{
+    text-decoration: none;
+    color: black;
+}
+
+#activites a:hover{
+    color: #0065FC;
+}
+
+/* Section activités - carte activité large */
+
+.card-activite-large{
+    width: 33%;
+    height: 300px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 4px 1px #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.card-activite-large h3{
+   margin: 5%;
+}
+
+.card-activite-large img{
+    height: 250px;
+    width: 100%; 
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+/* Section activités - container 2 cartes activité */
+
+.two-card-container{
+    width: 30%;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+/* Section activités - container 2 cartes activité - carte activité fort */
+
+#card-activite-fort{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 52%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 4px 1px #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+#card-activite-fort h3{
+    margin: 5% 5% 5% 10%;
+}
+
+#card-activite-fort img{
+    height: 115px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+/* Section activités - container 2 cartes activité - carte activité frioul */
+
+#card-activite-frioul{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 4px 1px #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+#card-activite-frioul h3{
+    margin: 5% 5% 5% 10%;
+}
+
+#card-activite-frioul img{
+    height: 90px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+/* Section activités - container 2 cartes activité - carte activité small */
+
+.card-activite-small{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 5px 4px 1px #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+.card-activite-small h3{
+    margin: 5%;
+}
+
+.card-activite-small img{
+    width: 100%;
+    height: 100px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
+
+/* Footer */
+
+footer{
+    background-color:#f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 2% 3% 3% 1%;
+}
+
+footer section{
+    width: 33%;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding-top: 0%;
+    margin: 0% 2% 0% 5%;
+
+}
+
+footer li{
+    padding-left: 0%;
+    margin: 2% 0% 2% 2%;
+}
+
+footer h3{
+    padding: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
