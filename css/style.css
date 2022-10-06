@@ -28,38 +28,46 @@ p{
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0% 3% 2% 3%;
+    padding: 0%;
 }
 
 nav {
     width: 30%;
-    margin: 2% 2% auto auto;
     padding: 0%;
+    height: 100%;
 }
 
 header img {
     height: 40px;
     width: 100px;
-    margin: 3% auto auto 2%;
     object-fit: cover;
+    margin-top: 2%;
 }
 
 
 nav ul {
     display: flex;
     justify-content: space-around;
+    gap: 10%;
     align-items: center;
     list-style-type: none;
-    font-size: 16px; 
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    margin-top: 0%;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
 }
 
 nav a {
     text-decoration: none;
     color:black;
-    margin-top: 0%;
-    padding-top: 30px;
-    padding-left: 5%;
 }
 
 nav a:hover{
@@ -68,11 +76,11 @@ nav a:hover{
 
 /* Header-nav - surlignage bleu */
 
-nav a{
+nav li{
     border-top: 4px solid transparent;
 }
 
-nav a:hover{ 
+nav li:hover{ 
     border-top: 4px solid #0065FC;
 }
 
@@ -147,17 +155,16 @@ label{
 #filtre-bar{
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     gap: 3%;
 }
 
-#filtre-list{
-    height: 48px;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 2%;
+#filtre-bar h2{
+    margin: 0;
 }
 
 .filtre{
+    width: auto;
     display: flex;
     flex-direction: row;
     border: 2px solid #f2f2f2;
@@ -168,34 +175,26 @@ label{
     align-items: center;
 }
 
-.first-filtre{
-    padding-right: 16px;
-}
-
-.filtre-animaux{
-    width: 250px;
-}
-
 .filtre i{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #DEEBFF;
     color: #0065FC;
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: visible;
+    padding: 0;
 }
 
 .filtre-content{
-    padding-left: 10px;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 14px;
+    padding: 0 25px 0 5px;
 }
 
 .filtre:hover{
-    border: 2px solid #0065FC;
     background-color: rgba(0, 101, 252, 0.2);
     cursor: pointer;
 }
