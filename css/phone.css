@@ -121,16 +121,19 @@
     #filtre-bar{
         flex-flow: column nowrap;
         align-items: flex-start;
+        padding-left: 5%;
     }
 
     #filtre-bar h2{
         margin: 0;
+        padding-bottom: 3%;
     }
 
     #filtre-bar-phone{
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
+        gap: 10px;
     }
 
     #filtre-row-phone{
@@ -173,6 +176,7 @@
         flex-flow: column-reverse wrap;
         gap: 3%;
         margin: 0% 0% 0% 0%;
+        padding-bottom: 5%;
     }
 
     /* Section Resultats - article hebergements populaires */
@@ -228,11 +232,10 @@
     #liste-hebergements{
         background-color: transparent;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
         justify-content: center;
         width: 100%;
         padding: 0%;
-        height: 1350px;
     }
 
     #liste-hebergements h2{
@@ -241,8 +244,8 @@
     }
 
     #plus{
-        padding: 0%;
-        margin: 5%;
+        padding: 4% 5% 5% 5%;
+        margin: 0%;
     }
 
     /* Section Resultats - article hébergements - container cartes */
@@ -251,7 +254,7 @@
         display: flex;
         flex-flow: column nowrap;
         padding: 0%;
-        height: 90%;
+        height: 100%;
     }
 
     /* Section Resultats - article hébergements - container cartes - container ligne de 3 cartes */
@@ -272,10 +275,15 @@
         height: 110px;
     }
 
+    .card-body-hebergement{
+        padding: 4% 3% 1% 5%;
+    }
+
     /* Section activités */
 
     #activites{
         margin: 0%;
+        padding-top: 5%;
     }
 
     #activites h2{
